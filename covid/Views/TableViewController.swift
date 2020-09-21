@@ -37,31 +37,6 @@ class TableViewController: UITableViewController, NetworkServiceDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Handle Click
-    }
-}
-extension UIImageView {
-    
-    func load(url: URL) {
-        
-        DispatchQueue.global().async { [weak self] in
             
-            if let data = try? Data(contentsOf: url) {
-                
-                if let image = UIImage(data: data) {
-                    
-                    DispatchQueue.main.async {
-                        
-                        self?.image = image
-                        
-                    }
-                    
-                }
-                
-            }
-            
-        }
-        
     }
-    
 }

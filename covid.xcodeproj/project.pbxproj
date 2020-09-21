@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		438EB6C22518BF0000A1C1B5 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438EB6C12518BF0000A1C1B5 /* ImageViewExtension.swift */; };
 		43E7C54E25189B0B00A2F63D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7C54D25189B0B00A2F63D /* AppDelegate.swift */; };
 		43E7C55025189B0B00A2F63D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7C54F25189B0B00A2F63D /* SceneDelegate.swift */; };
 		43E7C55225189B0B00A2F63D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7C55125189B0B00A2F63D /* TableViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		438EB6C12518BF0000A1C1B5 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		43E7C54A25189B0B00A2F63D /* covid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = covid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E7C54D25189B0B00A2F63D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43E7C54F25189B0B00A2F63D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				43E7C5832518A1AA00A2F63D /* Country.swift */,
+				438EB6C12518BF0000A1C1B5 /* ImageViewExtension.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				43E7C54E25189B0B00A2F63D /* AppDelegate.swift in Sources */,
 				43E7C5842518A1AA00A2F63D /* Country.swift in Sources */,
 				43E7C55025189B0B00A2F63D /* SceneDelegate.swift in Sources */,
+				438EB6C22518BF0000A1C1B5 /* ImageViewExtension.swift in Sources */,
 				43E7C5872518A1BF00A2F63D /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
