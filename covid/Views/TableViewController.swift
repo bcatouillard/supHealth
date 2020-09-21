@@ -12,6 +12,8 @@ class TableViewController: UITableViewController, NetworkServiceDelegate {
     
     var dataArray = Country.init(countries: [CountryElement(country: "", countryCode: "", slug: "", newConfirmed: 0, totalConfirmed: 0, newDeaths: 0, totalDeaths: 0, newRecovered: 0, totalRecovered: 0)])
     var callAPI = NetworkService()
+    var index: Int = 0
+    var valueToPass: CountryElement!
     
     func didFetchData(data: Country) {
         dataArray = data
@@ -37,6 +39,15 @@ class TableViewController: UITableViewController, NetworkServiceDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            
+        index = indexPath.row
+    }
+
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetail" {
+            let destination = segue.destination as! DetailedViewController
+            destination.countryArray = dataArray.countries[tableView.indexPathForSelectedRow!.row]
+        }
     }
 }
